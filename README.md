@@ -43,14 +43,14 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 - `log_example.txt`: Sample trade log with normalized observations.
 - `images/`:
   - `architecture.png`: System architecture.
-  - `net_worth.png`, `win_rate.png`, `drawdown.png`: TensorBoard metrics.
+  - `reward.png`, `networth_drawdown_winrate.png`, `trading_metrics.png`: TensorBoard metrics.
   - `strategy1.png`, `strategy2.png`: TradingView entry point examples.
-  - `trade_alert.png`: Telegram trade notification.
+  - `telegram_notifications.png`: Telegram trade notification.
 - `rl_actions_history.csv`: Action history sample.
 
 ## 📈 Performance
 - Robust across diverse market conditions, profitable from epoch 1.
-- Enhances 80 high-signal entry points (60% win rate at TP=SL=ATR).
+- Enhances 80 high-signal entry points (over 60% win rate at TP=SL=ATR without optimisation).
 - Consistent out-of-sample performance with low drawdown.
 
 ![Net Worth](images/net_worth.png)  
