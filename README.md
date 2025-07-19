@@ -25,7 +25,7 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 ![Sample Entry Point](images/strategy1.png)  
 *Example of high-signal entry (anonymized, win rate >60%).*
 
-![Trade Alert](images/trade_alert.png)  
+![Trade Alert](images/telegram_notifications.png)  
 *Telegram notification for trade execution.*
 
 ## 🧠 Challenges Overcome
