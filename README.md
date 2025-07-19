@@ -53,9 +53,6 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 - Enhances 80 high-signal entry points (over 60% win rate at TP=SL=ATR without optimisation).
 - Consistent out-of-sample performance with low drawdown.
 
-![Net Worth](images/net_worth.png)  
-*Sample net worth growth from TensorBoard.*
-
 ## 🚀 Future Plans
 - RL-driven risk sizing (dynamic lot sizes).
 - Multi-asset expansion (XAU, S&P, ETH) for portfolio diversification.
