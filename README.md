@@ -18,7 +18,7 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 
 ## 🛠️ Infrastructure
 - **Data Pipeline**: Fetches high-res BTC/USD candles (2017-2025) via Bybit/MT5 APIs, with advanced normalization and imputation (`get_last_candles.py`).
-- **Execution**: Seamless Bybit/MT5 integration with <100ms latency, 10% position sizing, -3% stop-loss, 0.04% commission (`trade_on_bybit.py`, `trade_mt5.py`).
+- **Execution**: Seamless Bybit/MT5 integration with optimized low-latency execution, 10% position sizing, -3% stop-loss, 0.04% commission (`trade_on_bybit.py`, `trade_mt5.py`).
 - **Trading Logic**: 80 high-signal entry points derived from market patterns, achieving 60% win rate at TP=SL=ATR (see `enter_points/`).
 - **Monitoring**: Detailed trade logs and signal analysis (`logs/log_example.txt`).
 
@@ -46,6 +46,7 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
   - `net_worth.png`, `win_rate.png`, `drawdown.png`: TensorBoard metrics.
   - `strategy1.png`, `strategy2.png`: TradingView entry point examples.
   - `trade_alert.png`: Telegram trade notification.
+- `rl_actions_history.csv`: Action history sample.
 
 ## 📈 Performance
 - Robust across diverse market conditions, profitable from epoch 1.
