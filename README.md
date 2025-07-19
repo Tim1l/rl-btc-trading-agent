@@ -1,6 +1,6 @@
 # RL BTC Trading Agent 🚀
 
-A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted over 7 months with a custom PPO environment and advanced feature engineering. This proprietary model leverages 80 high-signal entry points, multi-timeframe analysis, and a sophisticated reward function to deliver robust performance across market conditions. The repo showcases the infrastructure: data pipelines, execution, and logging.
+A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted over 8 months with a custom PPO environment and advanced feature engineering. This proprietary model leverages 80 high-signal entry points, multi-timeframe analysis, and a sophisticated reward function to deliver robust performance across market conditions. The repo showcases the infrastructure: data pipelines, execution, and logging.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red) ![Stars](https://img.shields.io/github/stars/Tim1l/rl-btc-trading-agent)
 
@@ -40,7 +40,7 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 - `run_pipeline.py`/`run_pipeline.bat`: Orchestrates data and execution.
 - `trade_mt5.py`/`trade_on_bybit.py`: Executes trades on MT5/Bybit.
 - `enter_points/`: CSV files with anonymized entry point data.
-- `logs/log_example.txt`: Sample trade log with normalized observations.
+- `log_example.txt`: Sample trade log with normalized observations.
 - `images/`:
   - `architecture.png`: System architecture.
   - `net_worth.png`, `win_rate.png`, `drawdown.png`: TensorBoard metrics.
