@@ -1,3 +1,4 @@
+![Header Image](images/wallpaper.png)
 # RL BTC Trading Agent 🚀
 
 A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted over 8 months with a custom PPO environment and advanced feature engineering. This proprietary model leverages 80 high-signal entry points, multi-timeframe analysis, and a sophisticated reward function to deliver robust performance across market conditions. The repo showcases the infrastructure: data pipelines, execution, and logging.
