@@ -20,7 +20,7 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 ## 🛠️ Infrastructure
 - **Data Pipeline**: Fetches high-res BTC/USD candles (2017-2025) via Bybit/MT5 APIs, with advanced normalization and imputation (`get_last_candles.py`).
 - **Execution**: Seamless Bybit/MT5 integration with optimized low-latency execution, 10% position sizing, -3% stop-loss, 0.04% commission (`trade_on_bybit.py`, `trade_mt5.py`).
-- **Trading Logic**: 80 high-signal entry points derived from market patterns, achieving 60% win rate at TP=SL=ATR (see `enter_points/`).
+- **Trading Logic**: 80 high-signal entry points derived from market patterns, achieving 60% win rate at TP(ATR) = SL(ATR) (see `enter_points/`).
 - **Monitoring**: Detailed trade logs and signal analysis (`log_example.txt`).
 
 ![Sample Entry Point](images/strategy1.png)  
