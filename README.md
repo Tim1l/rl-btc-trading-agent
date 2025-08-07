@@ -51,7 +51,7 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 
 ## 📈 Performance
 - Robust across diverse market conditions, profitable from epoch 1.
-- Enhances 80 high-signal entry points (over 60% win rate at TP=SL=ATR without optimisation).
+- Enhances 80 high-signal entry points (over 60% win rate at TP(ATR) = SL(ATR) without optimisation).
 - Consistent out-of-sample performance with low drawdown.
 
 ## 🚀 Future Plans
