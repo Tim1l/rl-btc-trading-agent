@@ -54,7 +54,7 @@ Research and validation are ongoing, with positive validation results across fou
 - `images/`:
   - `wallpaper-rl-math-v2.png`: Project cover illustration.
   - `research-overview.svg`: Overview of the project's research and engineering areas.
-  - `reward.png`, `networth_drawdown_winrate.png`, `trading_metrics.png`: Research-metric screenshots.
+  - `networth_drawdown_winrate.png`: Research-metric screenshot.
   - `strategy1.png`, `strategy2.png`: TradingView examples.
   - `telegram_notifications.png`: Telegram trade notification.
 
