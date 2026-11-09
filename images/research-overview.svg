@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="680" viewBox="0 0 1280 680" role="img" aria-labelledby="title desc">
+  <title id="title">Research and engineering overview</title>
+  <desc id="desc">Six areas of work: market data, learning systems, experimentation, model evaluation, execution integrations, and monitoring.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07161c"/><stop offset="1" stop-color="#0d262b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102930"/><stop offset="1" stop-color="#0d2128"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="95%" cy="0%" r="100%">
+      <stop offset="0" stop-color="#1c6e71" stop-opacity=".16"/><stop offset=".85" stop-color="#1c6e71" stop-opacity="0"/>
+    </radialGradient>
+
+    <symbol id="data" viewBox="0 0 32 32">
+      <ellipse cx="16" cy="7" rx="10" ry="4"/>
+      <path d="M6 7v17c0 5 20 5 20 0V7M6 15c0 5 20 5 20 0"/>
+    </symbol>
+    <symbol id="learning" viewBox="0 0 32 32">
+      <circle cx="8" cy="9" r="3"/><circle cx="24" cy="9" r="3"/><circle cx="16" cy="24" r="3"/>
+      <path d="m11 9 10 0M9.5 12 14.5 21M22.5 12 17.5 21"/>
+    </symbol>
+    <symbol id="experiment" viewBox="0 0 32 32">
+      <path d="M11 4h10M13 4v9L6 25c-1 2 0 3 2 3h16c2 0 3-1 2-3l-7-12V4M10 21h12"/>
+      <circle cx="13" cy="24" r=".7" fill="currentColor"/><circle cx="19" cy="24" r=".7" fill="currentColor"/>
+    </symbol>
+    <symbol id="evaluation" viewBox="0 0 32 32">
+      <circle cx="14" cy="14" r="9"/><path d="m21 21 7 7M9 15l3 3 7-8"/>
+    </symbol>
+    <symbol id="execution" viewBox="0 0 32 32">
+      <path d="M5 10h21m-6-6 6 6-6 6M27 23H6m6-6-6 6 6 6"/>
+    </symbol>
+    <symbol id="monitoring" viewBox="0 0 32 32">
+      <rect x="3" y="5" width="26" height="19" rx="3"/><path d="M10 29h12M16 24v5M7 15h4l3-5 4 9 3-4h4"/>
+    </symbol>
+  </defs>
+  <rect width="1280" height="680" rx="20" fill="url(#background)"/>
+  <rect width="1280" height="680" rx="20" fill="url(#glow)"/>
+  <g font-family="DejaVu Sans, Segoe UI, Arial, sans-serif">
+    <rect x="56" y="39" width="5" height="36" rx="2.5" fill="#67d4c9"/>
+    <text x="78" y="69" font-size="32" font-weight="700" fill="#edf7f7">Research &amp; Engineering</text>
+    <text x="56" y="108" font-size="17" fill="#a7bdc3">Independent reinforcement learning research for financial markets</text>
+    <g transform="translate(56 150)">
+      <rect width="368" height="194" rx="15" fill="url(#card)" stroke="#28505a" stroke-width="1"/>
+      <rect x="22" y="22" width="48" height="48" rx="12" fill="#163c42"/>
+      <use href="#data" x="31" y="31" width="30" height="30" fill="none" stroke="#70ded1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="105" font-size="22" font-weight="700" fill="#edf6f6">Market Data</text>
+      <text x="22" y="137" font-size="16" fill="#a8c1c7">Historical data acquisition</text>
+      <text x="22" y="162" font-size="16" fill="#a8c1c7">Quality &amp; maintenance</text>
+    </g>
+    <g transform="translate(456 150)">
+      <rect width="368" height="194" rx="15" fill="url(#card)" stroke="#28505a" stroke-width="1"/>
+      <rect x="22" y="22" width="48" height="48" rx="12" fill="#163c42"/>
+      <use href="#learning" x="31" y="31" width="30" height="30" fill="none" stroke="#70ded1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="105" font-size="22" font-weight="700" fill="#edf6f6">Learning Systems</text>
+      <text x="22" y="137" font-size="16" fill="#a8c1c7">Reinforcement learning</text>
+      <text x="22" y="162" font-size="16" fill="#a8c1c7">Financial time series</text>
+    </g>
+    <g transform="translate(856 150)">
+      <rect width="368" height="194" rx="15" fill="url(#card)" stroke="#28505a" stroke-width="1"/>
+      <rect x="22" y="22" width="48" height="48" rx="12" fill="#163c42"/>
+      <use href="#experiment" x="31" y="31" width="30" height="30" fill="none" stroke="#70ded1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="105" font-size="22" font-weight="700" fill="#edf6f6">Experimentation</text>
+      <text x="22" y="137" font-size="16" fill="#a8c1c7">Training reliability</text>
+      <text x="22" y="162" font-size="16" fill="#a8c1c7">Diagnostics &amp; tooling</text>
+    </g>
+    <g transform="translate(56 370)">
+      <rect width="368" height="194" rx="15" fill="url(#card)" stroke="#28505a" stroke-width="1"/>
+      <rect x="22" y="22" width="48" height="48" rx="12" fill="#163c42"/>
+      <use href="#evaluation" x="31" y="31" width="30" height="30" fill="none" stroke="#70ded1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="105" font-size="22" font-weight="700" fill="#edf6f6">Model Evaluation</text>
+      <text x="22" y="137" font-size="16" fill="#a8c1c7">Trading behaviour</text>
+      <text x="22" y="162" font-size="16" fill="#a8c1c7">Generalization &amp; outcomes</text>
+    </g>
+    <g transform="translate(456 370)">
+      <rect width="368" height="194" rx="15" fill="url(#card)" stroke="#28505a" stroke-width="1"/>
+      <rect x="22" y="22" width="48" height="48" rx="12" fill="#163c42"/>
+      <use href="#execution" x="31" y="31" width="30" height="30" fill="none" stroke="#70ded1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="105" font-size="22" font-weight="700" fill="#edf6f6">Execution Integrations</text>
+      <text x="22" y="137" font-size="16" fill="#a8c1c7">Broker &amp; exchange APIs</text>
+      <text x="22" y="162" font-size="16" fill="#a8c1c7">Order handling</text>
+    </g>
+    <g transform="translate(856 370)">
+      <rect width="368" height="194" rx="15" fill="url(#card)" stroke="#28505a" stroke-width="1"/>
+      <rect x="22" y="22" width="48" height="48" rx="12" fill="#163c42"/>
+      <use href="#monitoring" x="31" y="31" width="30" height="30" fill="none" stroke="#70ded1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="22" y="105" font-size="22" font-weight="700" fill="#edf6f6">Monitoring</text>
+      <text x="22" y="137" font-size="16" fill="#a8c1c7">Logging &amp; notifications</text>
+      <text x="22" y="162" font-size="16" fill="#a8c1c7">Operational visibility</text>
+    </g>
+    <path d="M56 606H1224" stroke="#25464e"/>
+    <text x="56" y="642" font-size="15" fill="#85a8b1">Selected areas of independent research and software development</text>
+    <circle cx="1216" cy="637" r="5" fill="#67d4c9"/>
+  </g>
+</svg>

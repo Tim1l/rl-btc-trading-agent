@@ -16,31 +16,31 @@ I own the project's research and engineering: market-data pipelines, the trading
 ## 📍 Current Status — November 2026
 Research and validation are ongoing, with positive validation results across four assets. Current work focuses on further evaluation, broader asset coverage, and preparation for live deployment.
 
-**Public research snapshot.** The technical descriptions, figures, and examples below document the version represented in this repository. The project's current research stage is described separately above.
+**Public showcase.** The overview below presents the project's research and engineering scope. Existing screenshots illustrate the public research snapshot; the current research implementation remains private.
 
 ## 🌟 Technical Innovations
-- **Custom RL Environment**: PPO-based with action masking, processing 35,000+ parameters/step across M15, H1, H4, D1 timeframes.
-- **Feature Extraction**: Temporal Convolutional Network (TCN) with 64-256 channels, dilations [1,2,4,8], and sequence length 480, capturing multi-TF dynamics.
-- **Policy Network**: 512-128-128 layers, enhanced by gradient hooks for stability and anti-overfitting design.
-- **Value Network**: Residual connections (128-512-384-256-128), layer normalization, and dropout (0.25) for robust value estimation.
-- **Reward Function**: Proprietary, optimizes 100-600 min holds, balances long/short entries, and prioritizes high-signal trades (80 entry points with 60% win rate at TP=SL=ATR).
-- **Observations**: Comprehensive state with 53 indicators (OHLC, RSI, ATR, EMA, HMA) and environment metrics, fully normalized.
-- **Compute**: GPU-optimized, achieving 150-220 FPS on A100 across 16 parallel environments.
+- **Custom RL Research**: Designed a financial research environment and developed learning-based approaches to trading decisions.
+- **Financial Time-Series Modelling**: Investigated neural methods for learning from market data, including temporal convolutional networks (TCNs).
+- **Reliable Experimentation**: Built GPU-based training workflows with attention to stability, memory efficiency, and recovery from interruptions.
+- **Evaluation & Diagnostics**: Developed tools to investigate model behaviour, generalization, and financial outcomes.
+- **Research-to-Execution Engineering**: Built supporting software for data acquisition, experiments, broker integrations, and monitoring.
 
-![Architecture](images/architecture.png)  
-*High-level pipeline: Data → TCN → PPO → Execution.*
+**Technology experience:** Python · PyTorch · Stable-Baselines3 · PPO · TCN · TensorBoard.
+
+![Research and engineering overview](images/research-overview.svg)  
+*Selected areas of independent research and engineering.*
 
 ## 🛠️ Infrastructure
-- **Data Pipeline**: Fetches high-res BTC/USD candles (2017-2025) via Bybit/MT5 APIs, with advanced normalization and imputation (`get_last_candles.py`).
-- **Execution**: Seamless Bybit/MT5 integration with optimized low-latency execution, 10% position sizing, -3% stop-loss, 0.04% commission (`trade_on_bybit.py`, `trade_mt5.py`).
-- **Trading Logic**: 80 high-signal entry points derived from market patterns, achieving 60% win rate at TP(ATR) = SL(ATR).
-- **Monitoring**: Trade logging and signal analysis, illustrated by the public screenshots.
+- **Market Data**: API-based acquisition and maintenance of historical financial data.
+- **Execution Integrations**: Broker and exchange connectivity through Bybit and MetaTrader 5.
+- **Research Tooling**: Software supporting quantitative experiments and the analysis of trading behaviour.
+- **Operational Monitoring**: Trade notifications, logging, and diagnostic tooling.
 
-![Sample Entry Point](images/strategy1.png)  
-*Example of high-signal entry (anonymized, win rate >60%).*
+![Trading research example](images/strategy1.png)  
+*Trading research example from the public snapshot.*
 
-![Trade Alert](images/telegram_notifications.png)  
-*Telegram notification for trade execution.*
+![Trade notification](images/telegram_notifications.png)  
+*Trade execution notification from the public prototype.*
 
 ## 🧠 Challenges Overcome
 - Addressed training instability through gradient diagnostics and optimization.
@@ -53,7 +53,7 @@ Research and validation are ongoing, with positive validation results across fou
 - `trade_mt5.py`/`trade_on_bybit.py`: Public execution-infrastructure examples for MT5/Bybit.
 - `images/`:
   - `wallpaper-rl-math-v2.png`: Project cover illustration.
-  - `architecture.png`: Architecture illustration from the public research snapshot.
+  - `research-overview.svg`: Overview of the project's research and engineering areas.
   - `reward.png`, `networth_drawdown_winrate.png`, `trading_metrics.png`: Research-metric screenshots.
   - `strategy1.png`, `strategy2.png`: TradingView examples.
   - `telegram_notifications.png`: Telegram trade notification.
