@@ -1,9 +1,22 @@
-![Header Image](images/wallpaper.png)
+![RL research cover](images/wallpaper-rl-math-v2.png)
 # RL BTC Trading Agent 🚀
 
-A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted over 8 months with a custom PPO environment and advanced feature engineering. This proprietary model leverages 80 high-signal entry points, multi-timeframe analysis, and a sophisticated reward function to deliver robust performance across market conditions. The repo showcases the infrastructure: data pipelines, execution, and logging.
+An independent reinforcement learning project for systematic trading, developed over nearly two years. Originally focused on Bitcoin, it has grown into research across multiple financial assets, combining quantitative research, machine learning, and trading infrastructure.
+
+I own the project's research and engineering: market-data pipelines, the trading environment, model development, evaluation, and execution tooling. This repository showcases selected infrastructure and examples from the project; the current research implementation remains private.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red) ![Stars](https://img.shields.io/github/stars/Tim1l/rl-btc-trading-agent)
+
+## 👨‍💻 Research & Engineering Ownership
+- Designed and developed the project independently, from initial research to execution prototypes.
+- Built market-data pipelines, training infrastructure, evaluation tools, and trading integrations.
+- Investigated model behavior, training stability, data quality, and generalization.
+- Developed logging and monitoring tools to connect research experiments with observable trading behavior.
+
+## 📍 Current Status — November 2026
+Research and validation are ongoing, with positive validation results across four assets. Current work focuses on further evaluation, broader asset coverage, and preparation for live deployment.
+
+**Public research snapshot.** The technical descriptions, figures, and examples below document the version represented in this repository. The project's current research stage is described separately above.
 
 ## 🌟 Technical Innovations
 - **Custom RL Environment**: PPO-based with action masking, processing 35,000+ parameters/step across M15, H1, H4, D1 timeframes.
@@ -30,10 +43,10 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 *Telegram notification for trade execution.*
 
 ## 🧠 Challenges Overcome
-- Mitigated gradient explosion/vanishing with custom gradient hooks and optimization.
-- Engineered proprietary reward function to balance long/short entries and enforce 100-600 min holds.
-- Ensured zero overfitting via RL design and out-of-sample validation.
-- Processed 35k+ parameters/step across 2017-2025 data.
+- Addressed training instability through gradient diagnostics and optimization.
+- Designed a proprietary reward function and investigated its effect on trading behavior.
+- Investigated overfitting risks and evaluated model behavior on out-of-sample data.
+- Built and maintained the data, logging, and analysis tools needed for sustained research experiments.
 
 ## 📁 Repository Contents
 - `get_last_candles.py`: Fetches Bybit candles.
@@ -49,15 +62,20 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
   - `telegram_notifications.png`: Telegram trade notification.
 - `rl_actions_history.csv`: Action history sample.
 
-## 📈 Performance
-- Robust across diverse market conditions, profitable from epoch 1.
-- Enhances 80 high-signal entry points (over 60% win rate at TP(ATR) = SL(ATR) without optimisation).
-- Consistent out-of-sample performance with low drawdown.
+## 📈 Research & Evaluation
+Evaluation covers trading outcomes, drawdowns, model behavior, and generalization across market conditions. Trade logs and experiment metrics support the investigation of changes in model performance and behavior.
 
-## 🚀 Future Plans
-- RL-driven risk sizing (dynamic lot sizes).
-- Multi-asset expansion (XAU, S&P, ETH) for portfolio diversification.
-- High-frequency trading adaptation with external infrastructure.
+The repository's existing charts and examples illustrate the public research snapshot. The current multi-asset research status is summarized under **Current Status**.
+
+## 🚀 Next Steps
+- Continue evaluation across multiple financial assets.
+- Develop portfolio-level diversification and risk allocation.
+- Advance execution tooling and preparation for live deployment.
+
+## 🤝 Research & Collaboration
+For quantitative research, ML engineering, and trading-infrastructure collaborations:
+
+[GitHub](https://github.com/Tim1l) · [LinkedIn](https://www.linkedin.com/in/tim-izmailov-a53524283/) · [Upwork](https://www.upwork.com/freelancers/~01d554f7011bd884f2)
 
 ## 🙌 Acknowledgments
 - Built with PyTorch, Stable-Baselines3.
@@ -66,4 +84,3 @@ A state-of-the-art reinforcement learning agent for BTC/USD trading, crafted ove
 
 ## License
 MIT License (see `LICENSE`).
-''')
