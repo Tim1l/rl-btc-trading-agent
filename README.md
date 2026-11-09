@@ -33,8 +33,8 @@ Research and validation are ongoing, with positive validation results across fou
 ## 🛠️ Infrastructure
 - **Data Pipeline**: Fetches high-res BTC/USD candles (2017-2025) via Bybit/MT5 APIs, with advanced normalization and imputation (`get_last_candles.py`).
 - **Execution**: Seamless Bybit/MT5 integration with optimized low-latency execution, 10% position sizing, -3% stop-loss, 0.04% commission (`trade_on_bybit.py`, `trade_mt5.py`).
-- **Trading Logic**: 80 high-signal entry points derived from market patterns, achieving 60% win rate at TP(ATR) = SL(ATR) (see `enter_points/`).
-- **Monitoring**: Detailed trade logs and signal analysis (`log_example.txt`).
+- **Trading Logic**: 80 high-signal entry points derived from market patterns, achieving 60% win rate at TP(ATR) = SL(ATR).
+- **Monitoring**: Trade logging and signal analysis, illustrated by the public screenshots.
 
 ![Sample Entry Point](images/strategy1.png)  
 *Example of high-signal entry (anonymized, win rate >60%).*
@@ -50,17 +50,13 @@ Research and validation are ongoing, with positive validation results across fou
 
 ## 📁 Repository Contents
 - `get_last_candles.py`: Fetches Bybit candles.
-- `get_action.py`: Processes RL actions.
-- `run_pipeline.py`/`run_pipeline.bat`: Orchestrates data and execution.
-- `trade_mt5.py`/`trade_on_bybit.py`: Executes trades on MT5/Bybit.
-- `enter_points/`: CSV files with anonymized entry point data.
-- `log_example.txt`: Sample trade log with normalized observations.
+- `trade_mt5.py`/`trade_on_bybit.py`: Public execution-infrastructure examples for MT5/Bybit.
 - `images/`:
-  - `architecture.png`: System architecture.
-  - `reward.png`, `networth_drawdown_winrate.png`, `trading_metrics.png`: TensorBoard metrics.
-  - `strategy1.png`, `strategy2.png`: TradingView entry point examples.
+  - `wallpaper-rl-math-v2.png`: Project cover illustration.
+  - `architecture.png`: Architecture illustration from the public research snapshot.
+  - `reward.png`, `networth_drawdown_winrate.png`, `trading_metrics.png`: Research-metric screenshots.
+  - `strategy1.png`, `strategy2.png`: TradingView examples.
   - `telegram_notifications.png`: Telegram trade notification.
-- `rl_actions_history.csv`: Action history sample.
 
 ## 📈 Research & Evaluation
 Evaluation covers trading outcomes, drawdowns, model behavior, and generalization across market conditions. Trade logs and experiment metrics support the investigation of changes in model performance and behavior.

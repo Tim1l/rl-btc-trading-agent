@@ -21,3 +21,13 @@ install_environment/
 *.pyd
 *.log
 *.tmp
+
+# Private research adapters and runtime exports
+env_state.json
+log_example.txt
+rl_actions_history.csv
+enter_points/signal_analysis.csv
+enter_points/signal_analysis_detailed.csv
+get_action.py
+run_pipeline.py
+pre_predict_state.json
